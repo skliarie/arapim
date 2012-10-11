@@ -1,0 +1,33 @@
+# Providers definition file
+#
+# Some providers work better in certain areas and some providers serve
+# better for some users.
+# Thus it is up to users to specify priorities the providers should be
+# used.
+
+#clickatell works acceptably in most countries
+[clickatell]
+username=EMPTY
+password=EMPTY
+auth_code=EMPTY
+url=http://api.clickatell.com
+pause_before_check=10
+zones=*
+
+#cellact works well in Israel.
+[cellact]
+username=EMPTY
+password=EMPTY
+auth_code=EMPTY
+#url=http://la1.cellactpro.com/SendSms.asmx
+url=http://la.cellactpro.com/http_req.asp
+pause_before_check=0
+zones=972
+
+# cdyne - good for USA
+[cdyne]
+username=EMPTY
+password=EMPTY
+auth_code=EMPTY
+url=http://sms2.cdyne.com/sms.svc/SimpleSMSsend
+pause_before_check=10
