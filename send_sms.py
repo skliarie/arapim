@@ -6,6 +6,10 @@ config = ConfigParser.ConfigParser()
 #config.readfp(open('defaults.cfg'))
 config.read(['arapim.cfg', os.path.expanduser('~/.myapp.cfg')])
 
+if len(sys.argv)==1:
+  print "Usage: send_sms [message text] [phone number]"
+  sys.exit(1)
+  
 text_str=sys.argv[1]
 recipient=sys.argv[2]
 
@@ -14,6 +18,7 @@ recipient=sys.argv[2]
 assert(recipient[0]=="+")
 recipient=recipient.replace("-","")
 
+# TBD: Verify that a given provider is configured in the configuration file before using it
 if recipient[:4]=="+972":
   print "Debug: using provider cellact"
   import cellact
