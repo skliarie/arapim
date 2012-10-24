@@ -31,3 +31,13 @@ password=EMPTY
 auth_code=EMPTY
 url=http://sms2.cdyne.com/sms.svc/SimpleSMSsend
 pause_before_check=10
+
+# jabber (GTalk,facebook) messages
+# details below are correct for Google Talk, just put your @gmail.com
+# login and password.
+[jabber]
+client=gmail.com
+server=talk.google.com
+port=5223
+login=EMPTY
+password=EMPTY
