@@ -103,7 +103,7 @@ if __name__ == '__main__':
 
   config = ConfigParser.ConfigParser()
   #config.readfp(open('defaults.cfg'))
-  config.read(['pysms.cfg', os.path.expanduser('~/.myapp.cfg')])
+  config.read(['arapim.cfg', os.path.expanduser('~/.myapp.cfg')])
 
   sms=sms_sender(config)
   sms.send(text_str,recipient)
