@@ -1,0 +1,2 @@
+alex|alex@gmail.com|+972123456789|group1,group2
+bob|bob@gmail.com|+972123456789|group2
