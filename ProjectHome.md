@@ -1,0 +1,1 @@
+Many monitoring systems need to send a message to human recipient in a reliable way. The arapim project provides the engine to try different message sending paths in effort to deliver the message.
